@@ -18,6 +18,17 @@ export default class ClassComponent extends Component {
       ]
     }
   }
+
+  componentDidMount() {
+    console.log("组建渲染完成 ");
+  } 
+
+  componentDidUpdate() {
+    console.log("class组件更新完成");
+  }
+  componentWillUnmount() {
+    console.log("class组件即将被卸载");
+  }
   clickHandle = () =>{
     this.setState({
       counter: 1000
